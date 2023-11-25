@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  grafana:
+    image: grafana/grafana
+    environment:
+      - GF_INSTALL_PLUGINS=https://github.com/svet-b/grafana-mqtt-datasource/archive/refs/heads/built.zip;ammpio-mqtt-datasource
+    ports:
+      - 3000:3000
