@@ -4,6 +4,10 @@ Configuração da conexão, inicialização do sensor de peso, conexão à Wi-Fi
 No loop principal, leitura do peso e o publicação do valor medido na balança regularmente. 
 
 Utilização de um ESP32.
+
+Utilização da biblioteca TinyMqtt:
+- o tinymqtt provê o broker e um client local dentro do próprio ESP
+- o grafana acessa o broker e exibe o que ta passando pelo tópico
 */
 
 #include <Arduino.h>
